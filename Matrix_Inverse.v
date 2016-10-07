@@ -147,6 +147,8 @@ inverse_mat24);
 	assign ef2[8] = ef1[8];
 	assign ef2[9] = ef1[9];
 	assign ef2[10] = ef1[10];
+	assign ef2[15] = ef1[15];
+	assign ef2[20] = ef1[20];
 	
 	assign ef2[11] = ef1[11]*ef1[6] - ef1[6]*ef1[11];
 	assign ef2[12] = ef1[12]*ef1[6] - ef1[7]*ef1[11];
@@ -175,6 +177,8 @@ inverse_mat24);
 	assign identity2[8] = identity1[8];
 	assign identity2[9] = identity1[9];
 	assign identity2[10] = identity1[10];
+	assign identity2[15] = identity1[15];
+	assign identity2[20] = identity1[20];
 
 	assign identity2[11] = identity1[11]*ef1[6] - identity1[6]*ef1[11];
 	assign identity2[12] = identity1[12]*ef1[6] - identity1[7]*ef1[11];
@@ -209,6 +213,8 @@ inverse_mat24);
 	assign ef3[14] = ef2[14];
 	assign ef3[15] = ef2[15];
 	assign ef3[16] = ef2[16];
+	assign ef3[20] = ef2[20];
+	assign ef3[21] = ef2[21];
 
 	assign ef3[17] = ef2[17]*ef2[12] - ef2[12]*ef2[17];
 	assign ef3[18] = ef2[18]*ef2[12] - ef2[13]*ef2[17];
@@ -236,6 +242,8 @@ inverse_mat24);
 	assign identity3[14] = identity2[14];
 	assign identity3[15] = identity2[15];
 	assign identity3[16] = identity2[16];
+	assign identity3[20] = identity2[20];
+	assign identity3[21] = identity2[21];
 	
 	assign identity3[17] = identity2[17]*ef2[12] - identity2[12]*ef2[17];
 	assign identity3[18] = identity2[18]*ef2[12] - identity2[13]*ef2[17];
